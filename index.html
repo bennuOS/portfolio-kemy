@@ -4,21 +4,32 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#0b0b0b">
+<meta name="description" content="Kemy Rojas, diseñador gráfico y creador de productos digitales. Fundador de Bennu Agency, BennuOS y Bencifra.">
 <title>Kemy Rojas | Portafolio</title>
 <style>
 *{box-sizing:border-box}
-body{margin:0;min-height:100vh;background:#0b0b0b;color:#f5f5f5;font-family:Arial,Helvetica,sans-serif;display:flex;align-items:center;justify-content:center;padding:28px}
+body{margin:0;min-height:100vh;background:#0b0b0b;color:#f5f5f5;font-family:Arial,Helvetica,sans-serif;display:flex;align-items:center;justify-content:center;padding:28px 16px}
 .card{width:min(460px,100%);text-align:center}
 .brand{font-size:13px;letter-spacing:7px;text-transform:uppercase;color:#999;margin-bottom:50px}
 h1{font-size:42px;line-height:1;margin:0 0 12px;font-weight:700}
 .role{color:#aaa;font-size:17px;margin:0 0 12px}
 .desc{color:#777;line-height:1.55;margin:0 auto 38px;max-width:390px}
 .links{display:grid;gap:14px}
-a{display:flex;align-items:center;justify-content:space-between;text-decoration:none;padding:19px 21px;border-radius:14px;font-weight:700;transition:.2s}
+a{display:flex;align-items:center;justify-content:space-between;gap:12px;text-decoration:none;padding:19px 21px;border-radius:14px;font-weight:700;transition:.2s;text-align:left}
 .primary{background:#f4f4f4;color:#0b0b0b}
 .secondary{border:1px solid #333;color:#f4f4f4;background:#141414}
 a:hover{transform:translateY(-2px)}
-.arrow{font-size:22px}
+a:focus-visible{outline:2px solid #f4f4f4;outline-offset:3px}
+.arrow{font-size:22px;flex:none}
+.label{font-size:12px;letter-spacing:4px;text-transform:uppercase;color:#777;margin:42px 0 16px}
+.projects{display:grid;gap:14px;text-align:left}
+.project{border:1px solid #262626;background:#111;border-radius:14px;padding:20px 21px}
+.project h2{font-size:18px;margin:0 0 4px}
+.project .tag{color:#999;font-size:13px;margin:0 0 12px}
+.project p{color:#8a8a8a;font-size:14px;line-height:1.55;margin:0}
+.project a{margin-top:16px;padding:14px 16px;font-size:14px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.chips span{font-size:12px;color:#bbb;border:1px solid #2e2e2e;border-radius:999px;padding:4px 10px}
 footer{margin-top:45px;color:#555;font-size:12px;letter-spacing:1px}
 </style>
 </head>
@@ -26,16 +37,36 @@ footer{margin-top:45px;color:#555;font-size:12px;letter-spacing:1px}
 <main class="card">
   <div class="brand">BENNU</div>
   <h1>Kemy Rojas</h1>
-  <p class="role">Diseñador Gráfico</p>
-  <p class="desc">Diseño, creatividad y comunicación visual para transformar ideas en experiencias de marca.</p>
+  <p class="role">Diseñador Gráfico · Productos Digitales</p>
+  <p class="desc">Transformo ideas en marcas, piezas visuales y aplicaciones web que conectan con las personas y generan resultados para cada negocio.</p>
   <div class="links">
     <a class="primary" href="https://www.behance.net/kemyrojas" target="_blank" rel="noopener">
-      <span>Ver portafolio en Behance</span><span class="arrow">↗</span>
+      <span>Ver portafolio de diseño en Behance</span><span class="arrow" aria-hidden="true">↗</span>
     </a>
     <a class="secondary" href="https://www.instagram.com/bennuagency_/" target="_blank" rel="noopener">
-      <span>Bennu Agency · Instagram</span><span class="arrow">↗</span>
+      <span>Bennu Agency · Instagram</span><span class="arrow" aria-hidden="true">↗</span>
     </a>
   </div>
+
+  <div class="label">Productos digitales</div>
+  <div class="projects">
+    <article class="project">
+      <h2>BennuOS</h2>
+      <p class="tag">Fundador y desarrollador de producto · 2026 – actualidad</p>
+      <p>Plataforma de citas y reservas online para clínicas, barberías, salones de belleza y estudios. Cada negocio tiene su página de reservas y gestiona agenda, clientes, servicios y horarios desde la web o la app Android.</p>
+      <div class="chips"><span>Next.js</span><span>React</span><span>TypeScript</span><span>PostgreSQL</span><span>Stripe</span><span>Android</span></div>
+      <a class="secondary" href="https://bennuos.com" target="_blank" rel="noopener">
+        <span>Visitar bennuos.com</span><span class="arrow" aria-hidden="true">↗</span>
+      </a>
+    </article>
+    <article class="project">
+      <h2>Bencifra</h2>
+      <p class="tag">Fundador y desarrollador de producto · 2026</p>
+      <p>Gestión financiera sencilla para autónomos y pymes: ingresos, gastos, cuentas, facturas, cobros parciales, importación de movimientos e informes, sin conocimientos contables.</p>
+      <div class="chips"><span>React</span><span>TypeScript</span><span>Node.js</span><span>SQLite</span><span>D3.js</span></div>
+    </article>
+  </div>
+
   <footer>BENNU · CREA · CONECTA · IMPULSA</footer>
 </main>
 </body>
